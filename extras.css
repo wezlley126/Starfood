@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    width: 100%;
+    display: inline-block;
+    background-color: #f57d51;
+    border-radius: 5px;
+}
+
+#menu ul {
+    text-align: right;
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul img {
+    width: 200px;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+#menu ul li a {
+    font-family: Nunito;
+    font-size: 22px;
+    text-decoration: double;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    color: #8B0000;
+    padding: 10px;
+    display: inline-block;
+    transition: background .4s;
+}
+
+#menu ul li a:hover {
+    background-color: #ec0b38;
+    border-radius: 5px;
+    color: aliceblue
+}
+
+#menu ul li:first-child {
+    float: left;
+}
+
+.Extras {
+    text-align: center;
+    font-family: nunito;
+    color: #8B0000
+}
+
+h2 {
+    font-size: 14px;
+    margin: 2px;
+    font-weight: normal;
+}
+
+.titulos h1 {
+    font-family: nunito;
+    background-color: #ff7243;
+    color: #8B0000;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.Pessoas {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Pessoa {
+    margin: 10px;
+    margin-bottom: 20px;
+    transition: border .2s;
+    width: 230px;
+}
+
+.Pessoa {
+    margin: 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    -moz-animation: all 0.5s;
+    -webkit-animation: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.78;
+}
+
+.Pessoa:hover {
+    margin-top: 20px;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1.5;
+}
+
+.Pessoa img {
+    float: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.Pessoa p {
+    height: 230px;
+    text-align: center;
+    padding: 5px 10px;
+    color: #8B0000;
+    font-family: Nunito;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.Pessoa h7 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #8B0000;
+    font-family: Nunito;
+}
+
+.titulos {
+    font-family: Montserrat;
+    background-color: #ff7243;
+    color: #8B0000;
+    border-radius: 10px;
+    font-size: 35px;
+    margin: 10px;
+    padding: 0px 25%;
+}
+
+.Vaga {
+    margin: 10px;
+    margin-bottom: 20px;
+    transition: border .2s;
+    width: 230px;
+}
+
+.Vaga {
+    max-width: 100%;
+    -moz-animation: all 0.5s;
+    -webkit-animation: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.78;
+}
+
+.Vaga:hover {
+    margin-top: 20px;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1.5;
+}
+
+.Vaga img {
+    float: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.Vaga p {
+    height: 230px;
+    text-align: center;
+    color: #8B0000;
+    font-family: Nunito;
+    
+}
+
+.Vaga h7 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #8B0000;
+    font-family: Nunito;
+}

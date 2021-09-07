@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.pagina_de_comida{
+	width: 350px;
+    height: 560px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .45;
+}
+#hamburguer{
+	background: linear-gradient(to right, #220a03, #471606);
+}
+#hamburguer:hover{
+	box-shadow: 0 0 50px rgb(8, 8, 8);
+}
+#pizza{
+	background: linear-gradient(to right, #258608, #26ca26);
+}
+#pizza:hover{
+	box-shadow: 0 0 50px rgb(209, 84, 11);
+}
+#sushi{
+    background: linear-gradient(to right, #df2909, #fa4646);
+}
+#sushi:hover{
+    box-shadow: 0 0 50px rgb(253, 9, 9);
+}
+#vegana{
+    background: linear-gradient(to right, #1dac0a, hsl(133, 79%, 56%));
+}
+#vegana:hover{
+    box-shadow: 0 0 50px rgb(34, 165, 8);
+}
+.pagina_de_comida h1 {
+    margin-bottom: 30px;
+}
+
+.pagina_de_comida form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagina_de_comida form input, select{
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.pagina_de_comida form input:focus {
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}
+
+.pagina_de_comida form.bnt {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: #ffffff;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.pagina_de_comida form .btn:hover {
+    background: #ffffffe1;
+}
+
+.pagina_de_comida form p {
+    text-align: center;
+    color: #ffffff;
+}
+.icons {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons div {
+    width: 122px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    background-color: #ffffffe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.icons div:nth-child(2) {
+    border: 2px solid #ffffff;
+}
+
+.icons div i {
+    color: #1dd86b;
+    margin: 8px;
+    transition: all .4s;
+}
+
+.icons div:hover i {
+    color: #ffffff;
+}
+
+.icons div .google-log {
+    color: #27df45;
+}
+
+.icons div:hover:nth-child(1) {
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}
+
+.icons div:hover {
+    color: rgb(255, 255, 255);
+}
+
+.icons div:hover:nth-child(2) {
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a :hover{
+    text-decoration: none;
+    color: white;
+}
+
+.select {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: #ffffff;
+    color: #ffffff;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    font-family: sans-serif;
+}
+
+.option {
+    font-size: 0.90rem;
+}
+
+.City {
+    width: 250px;
+    height: 35px;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    font-family: sans-serif;
+    box-sizing: 1px;
+}
+
+.City :hover, :focus{
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}
+
+.option2 {
+    font-size: 0.90rem;
+}
+
+.select1 :invalid {
+    color: rgb(241, 236, 236);
+}
+.textao{
+    color: red;
+}
+#enviar{
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    
+}
+#enviar:hover{
+    text-decoration: none;
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}

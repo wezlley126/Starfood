@@ -1,0 +1,26 @@
+.comprar{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+.titulodecomprarrealizda{
+    color: rgb(19, 190, 19);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bodyjapa{
+    background: linear-gradient(to right, #fa2f51, #ec6161);
+}
+.bodyhamburguer{
+    background: linear-gradient(to right, #331106, #99300c);
+}
+.bodypizza{
+    background: linear-gradient(to right, #db4b1b, #ff8056);
+}
+.bodyvegana{
+    background: linear-gradient(to right, #14b822, #57ff6e);
+}
