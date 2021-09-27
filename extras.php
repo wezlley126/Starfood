@@ -28,17 +28,16 @@
 
 <body>
 
-    <nav id="menu">
-        <ul>
-            <li><img src="Comidas/logo.png"></li>
-            <?php
-                echo "Você está logado com o e-mail de:".$_SESSION['email'];
-            ?>
-            <li><a href="index.php">Home</a></li>
-            <li><a href='sistema_contas/Sair.php'>Sair</a></li>
-            <li><a href="extras.php" rel="next">Extra</a></li>
-        </ul>
-    </nav>
+  <div class='navbar'>
+
+      <!-- <img src='Comidas/logo.png' id="logo"> -->
+      <a href="index.php">Home</a>
+      <a href="identificador_de_comida/Carrinho.php"><img id="carroça" src="carroça.png" ></a>
+      <a href='users/users.php'>User</a>
+      <a href='sistema_contas/Sair.php'>Sair</a>
+      <a href="extras.php">Extra</a>
+      </ul>
+  </div>
     <div class="Extras">
         <h1>Extras</h1>
         <h3>Área reservada aos participantes desse trabalho</h3>
@@ -78,7 +77,8 @@
                 <p>
                     <h7>Guilherme</h7></br>
                     Área de Front-End, Desenvolveu a estrutura do menu junto com o design da logo, também dando
-                    concepções nos "Extras"
+                    concepções nos "Extras".
+                    Responsavel por comer mulheres casadas.
                 </p>
             </section>
             <section class="Pessoa">
@@ -103,25 +103,12 @@
                 </p>
             </section>
             <section class="Pessoa">
-                <img src="Extras/weslley.jpg">
+                <img src="Extras/madara.gif">
                 <p>
-                    <h7>Weslley</h7></br>
-                    Criou o registro e ajudou no login, implementou o php, contribuiu no css e trabalhou com os demais
-                    para correção de erros e bugs.
-                </p>
-            </section>
-        </section>
-        <section class="Pessoas">
-            <section class="Vaga">
-                <img src="devicon.png">
-                <p>
-                    <h7>Vaga aberta</h7></br>
-                    A qualquer pessoa interessdo(a) por back-end, estamos recrutando para ser o 8° membro do grupo Starfood
-                </p>
-                <p>
-                    <h7>Preferências</h7><br>
-                    Conhecimento em PHP, Saiba trabalhar em equipe, tenha responsabilidade,
-                    esteja aberto a criticas, e tenha conhecimentos básicos de desenvolvimento web com HTML5 e estilização com CSS3 ou onisciência
+                    <h7>Uchiha Madara</h7></br>
+                    Criou: o sistema de login e registro, sistema do carrinho de compras, 
+                    sistema de alteração de dados do usuário, é o principal responsavel pelo 
+                    mysql e pela adiministração do banco de dados.
                 </p>
             </section>
         </section>

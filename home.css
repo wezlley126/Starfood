@@ -6,65 +6,32 @@
     box-sizing: border-box;
 }
 
-#menu {
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: inline-block;
-    background-color: #f57d51;
-    border-radius: 5px;
+h1{
+  text-align: center;
 }
 
-#menu ul {
-    text-align: right;
-    list-style: none;
-    padding: 0;
+#logo{
+  width: 200px;
+}
+.navbar {
+  display: flex;
+  background-color: #ff7243;
 }
 
-#menu ul img {
-    width: 200px;
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0px;
 }
 
-#menu ul li {
-    display: inline-block;
-    padding-bottom: 0;
-}
-
-#menu ul li a {
-    font-family: Nunito;
-    font-size: 22px;
-    text-decoration: double;
-    text-align: right;
-    text-decoration: none;
-    margin-top: 70%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 7px;
-    color: #8B0000;
-    padding: 10px;
-    display: inline-block;
-    transition: background .4s;
-}
-
-#menu ul li a:hover {
-    background-color: #ec0b38;
-    border-radius: 5px;
-    color: aliceblue
-}
-
-#menu ul li:first-child {
-    float: left;
-}
-
-#Catalogo {
-    margin-top: 10px;
-}
-
-#Catalogo h2 {
-    font-family: Nunito;
-    text-align: center;
-    color: #8B0000;
-    border-radius: 10px;
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #c15128;
+  color: white;
+  transition: 0.50s;
 }
 
 .Titulos h1 {
@@ -80,10 +47,10 @@
 }
 
 .Comidas {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .comida {
@@ -109,6 +76,7 @@
 .comida img {
     width: 300px;
     height: 250px;
+    display: inline
 }
 
 .Comidas p {
@@ -138,4 +106,24 @@
     border-radius: 5px;
     color: white;
     box-shadow: 2px 2px 2px black;
+}
+#carroça{
+
+}
+/* os navs sao as configuracoes atuais do menu*/
+
+@media (max-width: 700px) {
+  .row, .navbar,  {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .row, .navbar, {
+    flex-direction: row;
+  }
+}
+@media (max-width: 300px){
+  .row, .navbar {
+    flex-direction: row;
+  }
 }

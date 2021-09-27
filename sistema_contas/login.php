@@ -8,7 +8,8 @@
     $senha = mysqli_escape_string($conect, $_GET['senha']);
 
     //variavél que armazena o comando sql;
-    $comando = ("SELECT * FROM contas WHERE email = '$email'AND senha = md5('$senha')");
+    $senhamd5 = md5($senha);
+    $comando = ("SELECT * FROM contas WHERE email = '$email' AND senha = '$senhamd5'");
 
     //variavel que executa o comando guardado na variavel anterior, parametros usados: variavel da conexão que se encontra em connect.php e a variavel com o comando sql;
     $query = mysqli_query($conect, $comando);

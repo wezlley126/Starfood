@@ -44,7 +44,7 @@
             <p>Você deseja:</p>
             <div class="icons">
                 <div>
-                    <a href="Cadastro.php"><i class="Cancel"></i><span>Registrar-se</span></a>
+                    <a href="Cadastro.php" id="botão_registro"><i class="Cancel"></i><span>Registrar-se</span></a>
                 </div>
                 <div>
                     <button id="enviar">Login</button>

@@ -23,17 +23,19 @@
     @$_SESSION['senha'];
 
     //condição que avisa caso já exista um email igual ao que foi usado no formulario de cadastro;
-    $_SESSION['conta_existente'];
-    if ($_SESSION['conta_existente'] == 1) {
-        ?>
-        <center style="color: red;">O email já está em uso</center>
-        <?php
-        $_SESSION['conta_existente'] = 0;
-    }else{
-      echo "<br/><center>Seja bem-vindo<br/>"."</center>";
-    }
 ?>
-        <h1>Cadastre-se</h1>
+        <h1>Seja bem-vindo</h1>
+        <?php
+            $_SESSION['conta_existente'];
+            if ($_SESSION['conta_existente'] == 1) {
+                ?>
+                <center style="color: red;">O email já está em uso</center>
+                <?php
+                $_SESSION['conta_existente'] = 0;
+            }else{
+              echo "<br/><center>Cadastre-se<br/>"."</center>";
+            }
+        ?>
         <form action="resgistro.php" method="GET">
             <label for="name"><b>Nome</b></label>
             <input type="text" name="nome" id="" placeholder="Digite seu nome..." required>
@@ -57,7 +59,7 @@
                 </select>
             </div>
 
-            <label for="membro" id="Memb"><b>Membro</b></label>
+            <label for="membro"><b>Membro</b></label>
             <select class="member" name="membro">
                 <option value="comum" class="option2">Comum</option>
                 <option value="premium" class="option2">Premium</option>
@@ -66,7 +68,7 @@
             <p>Você deseja:</p>
             <div class="icons">
                 <div>
-                    <a href="logino.php"><i></i><span>Login</span></a>
+                    <a href="logino.php" id="botão_login"><i></i><span>Login</span></a>
                 </div>
                 <div id="btn">
                     <input id="btnMargin" type="submit" name="enviar" value="Cadastrar" style="margin: 0px;">

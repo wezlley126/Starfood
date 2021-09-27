@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+}
+
+/*
+Definindo o espaçamento entre os elementos inputs
+*/
+input, select{
+  margin:8px;
+  padding: 8px;
+  border: 2px outset seagreen;
+}
+
+/*
+Definindo as caracteristicas do botão 'Alterar os dados!'
+*/
+input[type=submit]{
+  border: outset 3px black;
+  background-color: white;
+}
+
+/*
+Definindo as caracteristicas do botão 'Alterar os dados!' quando clicar nele
+*/
+input[type=submit]:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=Text], select:focus{
+  border: 2px outset seagreen;
+  color: black;
+  background-color: white;
+}

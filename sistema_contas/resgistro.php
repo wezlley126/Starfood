@@ -21,10 +21,10 @@
 
     //comando que verifica quantas contas existem com o email e a senha digitados;
     $rows = mysqli_num_rows($query1);
-
+    $senhamd5 = md5($senha);
     //se não existir nenhuma linha com o email e senha digitados ele starta a sessão e redireciona para a página principal se ele encontrar avisa que o email já está em uso;
-    if ($rows==0 & !empty($nome) & !empty($sobrenome) & !empty($email) & !empty($senha) & !empty($sexo) & !empty($membro)) {
-        $comando2 = "INSERT INTO contas (nome, sobrenome, email, senha, sexo, membro) VALUES ('$nome', '$sobrenome', '$email', md5('$senha'), '$sexo', '$membro')";
+    if ($rows==0 & !empty($nome) & !empty($sobrenome) & !empty($email) & !empty($senhamd5) & !empty($sexo) & !empty($membro)) {
+        $comando2 = "INSERT INTO contas (nome, sobrenome, email, senha, sexo, membro) VALUES ('$nome', '$sobrenome', '$email', '$senhamd5', '$sexo', '$membro')";
         $query2 = mysqli_query($conect, $comando2);
         $_SESSION['conta_criada'] = true;
         header("location: logino.php");

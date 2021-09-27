@@ -5,52 +5,28 @@
     box-sizing: border-box;
 }
 
-#menu {
-    width: 100%;
-    display: inline-block;
-    background-color: #f57d51;
-    border-radius: 5px;
+#logo{
+  width: 200px;
+}
+.navbar {
+  display: flex;
+  background-color: #ff7243;
 }
 
-#menu ul {
-    text-align: right;
-    list-style: none;
-    padding: 0;
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0px;
 }
 
-#menu ul img {
-    width: 200px;
-}
-
-#menu ul li {
-    display: inline-block;
-    padding-bottom: 0;
-}
-
-#menu ul li a {
-    font-family: Nunito;
-    font-size: 22px;
-    text-decoration: double;
-    text-align: right;
-    text-decoration: none;
-    margin-top: 70%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 7px;
-    color: #8B0000;
-    padding: 10px;
-    display: inline-block;
-    transition: background .4s;
-}
-
-#menu ul li a:hover {
-    background-color: #ec0b38;
-    border-radius: 5px;
-    color: aliceblue
-}
-
-#menu ul li:first-child {
-    float: left;
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #c15128;
+  color: white;
+  transition: 0.50s;
 }
 
 .Extras {
@@ -188,4 +164,18 @@ h2 {
     padding: 5px 10px;
     color: #8B0000;
     font-family: Nunito;
+}
+@media (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+@media (max-width: 500px){
+  .row, .navbar {
+    flex-direction: row;
+  }
+}
+@media (max-width: 300px){
+  .row, .navbar {
+    flex-direction: row;
+  }
 }

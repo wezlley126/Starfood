@@ -9,6 +9,7 @@
         header("location: ../../logino.php");
     }
     $close = mysqli_close($conect);
+    echo $_SESSION['compra'];
 ?>
 <!DOCTYPE html>
 <html lang="Pt-br">
@@ -20,14 +21,14 @@
     <link rel="icon" href="../../icone.png">
     <title>Calabresa Comum</title>
 </head>
-<body style="height: 100vh;
+<body id="body" style="height: 100vh;
     background: linear-gradient(to right, #db4b1b, #ff8056);">
     <div class="pagina_de_comida" id="pizza">
         <h1>Faça seu pedido</h1>
         <form action="pizza.php" method="GET">
 
             <label for="name"><b>Endereço</b></label>
-            <input type="" name="endereco" id="" placeholder="Digite seu Endereço..." required>
+            <input type="" name="endereco" id="input" placeholder="Digite seu Endereço..." required>
 
             <label for="email"><b>Bairro</b></label>
             <input type="text" name="bairro" id="" placeholder="Digite seu Bairro..." required>
@@ -58,5 +59,6 @@
         </form>
     </div>
 </div>
+<?php include '../../identificador_de_comida/javascript.php'; ?>
 </body>
 </html>

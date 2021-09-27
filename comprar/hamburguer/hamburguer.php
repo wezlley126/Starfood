@@ -1,8 +1,8 @@
 <?php
     session_start();
-    
+
     include("../../sistema_contas/connect.php");
-    
+
     $_SESSION['email'];
     $_SESSION['senha'];
 

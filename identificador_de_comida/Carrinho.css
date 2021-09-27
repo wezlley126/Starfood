@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+.bkg{
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  display: flex;
+  color: #33FFFF
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bkg form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

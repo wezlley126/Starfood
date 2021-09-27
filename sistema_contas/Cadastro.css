@@ -87,7 +87,13 @@ body {
     Colocando que, o background deve ser (224, 224, 224), ou #e0e0e0, e que a cor dos textos fossem de cor branca. Dando esse feito de trnasição..
 */
 
-.create-page form input:hover {
+.create-page form input:focus {
+    background: rgb(36, 34, 34);
+    color: #ffffff;
+    font-size: 1em;
+    border: 2px solid rgba(245, 34, 6, 0.781);
+}
+.create-page form input[type = 'submit']:hover {
     background: rgb(36, 34, 34);
     color: #ffffff;
     font-size: 1em;
@@ -215,7 +221,7 @@ a {
 }
 
 #btnMargin: hover{
-    
+
 }
 
 #btnMargin:hover{
@@ -250,6 +256,13 @@ a {
     color: #ffffff;
     font-size: 1em;
     border: 2px solid rgba(245, 34, 6, 0.781);
+}
+
+#botão_login{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 7.8%;
 }
 
 .member option {
