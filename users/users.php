@@ -1,5 +1,12 @@
 <?php
   session_start();
+  if (!isset($_SESSION['user'])) {
+      header("location: ../sistema_contas/logino.php");
+  }else{
+    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+      header("location: ../sistema_contas/logino.php");
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,11 +25,10 @@
   <a href='../sistema_contas/Sair.php'>Sair</a>
   <a href="../extras.php">Extra</a>
 </div>
-
 <div class="header">
   <h1>starfood</h1>
   <p>O seu site de comida que vai alem <b>estrelas</b> por voce</p>
-  <?php 
+  <?php
 
     if (isset($_SESSION['conta_alterada'])) {
       echo "Parabéns, seus dados foram alterados com sucesso.";
@@ -38,7 +44,6 @@
 
   ?>
 </div>
-
 <div class="row">
   <div class="side">
     <h2>Sobre mim:</h2>
@@ -60,17 +65,21 @@
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Atualizacoes</p>
     <p>Vejam as mais novas noticias do site Starfood sobre seu cartalogo de comida entre outras novidades:</p>
-    <div class="anucio-de-vip">
-       <img id="imagem-vip" src="https://static.thenounproject.com/png/1565418-200.png" alt="imagem do vip">
-       <h1 style="color: gold;">Sejam um  vip agora:</h1>
-       <p>O nosso usuario vip tem diversos vantagens em nosso site sejam desconto para nosso produtos alem de possuir o acessou a armazer de produtos reservados. </p>
-       <form class="" action="index.html" method="post">
-           <input id="Vipao" type="submit" name="" value="VIP">
-       </form>
-    </div>
+
   </div>
 </div>
-
+<div class="row">
+  <div class="side">
+<div class="anucio-de-vip">
+   <img id="imagem-vip" src="https://static.thenounproject.com/png/1565418-200.png" alt="imagem do vip">
+   <h1 style="color: gold;">Sejam um  vip agora:</h1>
+   <p>O nosso usuario vip tem diversos vantagens em nosso site sejam desconto para nosso produtos alem de possuir o acessou a armazer de produtos reservados. </p>
+   <form class="" action="index.html" method="post">
+       <input id="Vipao" type="submit" name="" value="VIP">
+   </form>
+</div>
+</div>
+</div>
 <div class="footer">
   <h2>Todos os direitos do site sao reservados para Starfood &copy;</h2>
   <p>todos os responsaveis pelo site @Daniel,@Maria Eduarda, @Wesley, @Diego, @Kleisson, @Lucas, @Guilherme.</p>

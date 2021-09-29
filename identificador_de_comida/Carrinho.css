@@ -3,22 +3,17 @@
   padding: 0;
   font-family: inherit;
 }
-.bkg{
-  width: 350px;
-  height: 450px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  display: flex;
-  color: #33FFFF
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-}
+body{
 
+}
+.bkg{
+
+}
 .bkg form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  border: solid 2px black;
+  width: 300px;
+  background-color: #6f34b9;
+  color: #99b61c;
 }

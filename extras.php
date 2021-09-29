@@ -5,12 +5,16 @@
     //conecta ao banco de dados mysql;
     include("sistema_contas/connect.php");
 
-    $_SESSION['email'];
-    $_SESSION['senha'];
+    //$_SESSION['email'];
+    //$_SESSION['senha'];
 
     //verifica se a sessão foi iniciada ou está vazia, se estiver vázia ele nega o acesso e redireciona para a página de login;
-    if (empty($_SESSION['email']) || empty($_SESSION['senha'])) {
+    if (!isset($_SESSION['user'])) {
         header("location: sistema_contas/logino.php");
+    }else{
+      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+        header("location: sistema_contas/logino.php");
+      }
     }
     //fecha a conexão
     $close = mysqli_close($conect);
@@ -61,8 +65,8 @@
                 <img src="Extras/Daniel.jpg">
                 <p>
                     <h7>Daniel</h7></br>
-                    Responsável pelas ideias de cores, imagens e preços. Também desenvolveu as páginas de Login, criação
-                    de conta e de compras em linguagens HTML 5 e CSS3.
+                    Responsável pelo design do site, incluindo as cores, preços, imagens e o desenvolvimento dos formulários em HTML e CSS.
+                    Também participou do desenvolvimento inicial das ideias do site.
                 </p>
             </section>
             <section class="Pessoa">
@@ -99,15 +103,15 @@
                 <p>
                     <h7>Lucas</h7></br>
                     da equipe de Back-End Responsável pela Criação dos Scripts em PHP do Projeto, Também contribuiu nas
-                    outras paginas.
+                    outras paginas, @MediaSquare, I am Batmam.
                 </p>
             </section>
             <section class="Pessoa">
                 <img src="Extras/madara.gif">
                 <p>
                     <h7>Uchiha Madara</h7></br>
-                    Criou: o sistema de login e registro, sistema do carrinho de compras, 
-                    sistema de alteração de dados do usuário, é o principal responsavel pelo 
+                    Criou: o sistema de login e registro, sistema do carrinho de compras,
+                    sistema de alteração de dados do usuário, é o principal responsavel pelo
                     mysql e pela adiministração do banco de dados.
                 </p>
             </section>

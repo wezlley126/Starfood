@@ -1,5 +1,12 @@
 <?php
   session_start();
+  if (!isset($_SESSION['user'])) {
+      header("location: sistema_contas/logino.php");
+  }else{
+    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+      header("location: sistema_contas/logino.php");
+    }
+  }
   if (!isset($_POST['alterar_dados'])){
     header('location: users.php');
   }
@@ -17,13 +24,11 @@
       <?php
 
       ?>
-
+   <div class="formulario-de-dados">
     <form class="" action="alterar_dados_mysql.php" method="post">
         <input type="text" name="nome" value="<?php echo $_SESSION['user'][1] ?>" required><br/>
 
         <input type="text" name="sobrenome" value="<?php echo $_SESSION['user'][2] ?>" required><br/>
-
-        <input type="email" name="email" value="<?php echo $_SESSION['user'][3] ?>" required><br/>
 
         <select class="select" name="sexo">
             <option value="Masculino" class="option">Masculino</option>
@@ -41,8 +46,6 @@
         <input type="submit" name="alteração_dados_concluido" value="Alterar os dados!">
 
     </form>
-    <?php
-      print_r($_SESSION['user']);
-    ?>
+  </div>
   </body>
 </html>

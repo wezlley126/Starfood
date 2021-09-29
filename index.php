@@ -7,12 +7,13 @@
     //conecta ao banco de dados mysql;
     include("sistema_contas/connect.php");
 
-    $_SESSION['email'];
-    $_SESSION['senha'];
-
     //verifica se a sessão foi iniciada ou está vazia, se estiver vázia ele nega o acesso e redireciona para a página de login;
-    if (empty($_SESSION['email']) || empty($_SESSION['senha'])) {
-        header("location: sistema_contas/logino.php");
+    if (!isset($_SESSION['user'])) {
+        header("location: ../sistema_contas/logino.php");
+    }else{
+      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+        header("location: ../sistema_contas/logino.php");
+      }
     }
 
     //fecha a conexão
@@ -86,15 +87,17 @@
         <?php
       }//$_SESSION['compra_realizada'] = false;
       echo "<br/>";*/
-      if (isset($_GET['adicionar'])) {
-        echo "existe";
-      }else {
+      if (!isset($_GET['adicionar'])) {
         ?>
         <div style="text-align: center; font-size: 20px; color: blue;">
-            <?php echo $_SESSION['compra'] ?> foi adicionado ao carrinho de compras.<br/>
+            <?php
+            if ($_SESSION['compra'] != null){
+              echo $_SESSION['compra']." foi adicionado ao carrinho de compras.<br/>";
+            }
+            ?>
         </div>
         <?php
-        $_SESSION['compra'] = "No momento nada";
+        $_SESSION['compra'] = null;
       }
 
       if ($_SESSION['erro_compra'] == true){

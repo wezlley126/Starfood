@@ -1,14 +1,21 @@
-body{
-  text-align: center;
-}
 
 /*
 Definindo o espaçamento entre os elementos inputs
 */
+
+/*Div do formulario de dados*/
+.formulario-de-dados{
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid gold;
+  text-align: center;
+  direction: ltr;
+}
 input, select{
   margin:8px;
   padding: 8px;
   border: 2px outset seagreen;
+  text-align: center;
 }
 
 /*
@@ -17,6 +24,7 @@ Definindo as caracteristicas do botão 'Alterar os dados!'
 input[type=submit]{
   border: outset 3px black;
   background-color: white;
+  text-align: center;
 }
 
 /*
@@ -27,10 +35,12 @@ input[type=submit]:hover{
   color: white;
   cursor: pointer;
   transition: 0.5s;
+  text-align: center;
 }
 
 input[type=Text], select:focus{
   border: 2px outset seagreen;
   color: black;
   background-color: white;
+  text-align: center;
 }
