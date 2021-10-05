@@ -16,18 +16,51 @@
     <link rel="stylesheet" href="Carrinho.css">
   </head>
   <body>
-    <div class="bkg" align="center">
-      <form class="bkg" action="index.html" method="post">
+    <div id="compras">
+      <?php
+        if (isset($_SESSION['carrinho_not_null'])) {
+      ?>
+      <div id="titulo_carrinho">Lista de pedidos realizados.</div>
+      <table id="tabela_compras" align="center">
+        <thead>
+            <td>Nome</td>
+            <td>Quantidade</td>
+            <td>Valor</td>
+        </thead>
         <?php
+        $total = 0;
+        //exibe todos os produtos comprados verificando se eles existem;
           foreach ($_SESSION['lista_de_pedidos'] as $nome => $array) {
             if (isset($_SESSION[$nome])) {
-              //print_r($_SESSION[$nome]);
-              echo $_SESSION[$nome]['nome'].", quantidade: ".$_SESSION[$nome]['quantidade'].", preço: ".$_SESSION[$nome]['preço']*$_SESSION[$nome]['quantidade'];
-              echo "<br/>";
+              $total += $_SESSION[$nome]['preço']*$_SESSION[$nome]['quantidade'];
+              //escreve todos os produtos em uma tabela de compras.
+              ?>
+              <tr>
+                <td><?php echo $_SESSION[$nome]['nome'] ?></td>
+                <td><?php echo $_SESSION[$nome]['quantidade'] ?></td>
+                <td><?php echo "R$".$_SESSION[$nome]['preço']*$_SESSION[$nome]['quantidade'].",00" ?></td>
+              </tr>
+              <?php
             }
           }
-        ?>
-      </form>
+          ?>
+            <tr>
+                <td colspan="2"><b>Total: </b></td>
+                <td><?php echo "R$".$total.",00"; ?></td>
+            </tr>
+
+            </table>
+
+          <?php
+            ?>
+            <button type="button" name="button" id="button">Confirmar a compra</button>
+            <?php
+              }else{
+                ?>
+                <div id="produto_nulo">Nenhum produto foi adicionado ao carrinho no momento.</div>
+                <?php
+              }
+            ?>
     </div>
   </body>
 </html>

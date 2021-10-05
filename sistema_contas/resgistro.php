@@ -29,8 +29,8 @@
         $_SESSION['conta_criada'] = true;
         header("location: logino.php");
     }else{
-        header("location: cadastro.php");
         $_SESSION['conta_existente'] = 1;
+        header("location: cadastro.php");
     }
 
     //fecha a conexão;

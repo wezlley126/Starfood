@@ -20,7 +20,7 @@
             //starta a sessão salvando o email e senha do usuário para ele não ter que fazer login toda vez que entrar no site, somente após encerrar a sessão;
 
             //comando que verifica se o email e a senha estão vázios;
-            if (empty($_SESSION['email']) || empty($_SESSION['senha'])) {
+            if (!isset($_SESSION['user'])) {
         echo "Realize login para continuar.<br/>"."</center>";
             }
             if ($_SESSION['conta_existente'] == true) {

@@ -4,23 +4,18 @@ Definindo o espaçamento entre os elementos inputs
 */
 
 /*Div do formulario de dados*/
-.formulario-de-dados{
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 2px solid gold;
-  text-align: center;
-  direction: ltr;
-}
+
+/*
 input, select{
   margin:8px;
-  padding: 8px;
+  padding: 8px;atom://teletype/portal/f62768bc-aac1-47c1-a480-0fe791c7756f
   border: 2px outset seagreen;
   text-align: center;
 }
 
 /*
 Definindo as caracteristicas do botão 'Alterar os dados!'
-*/
+
 input[type=submit]{
   border: outset 3px black;
   background-color: white;
@@ -29,7 +24,7 @@ input[type=submit]{
 
 /*
 Definindo as caracteristicas do botão 'Alterar os dados!' quando clicar nele
-*/
+
 input[type=submit]:hover{
   background: black;
   color: white;
@@ -38,9 +33,60 @@ input[type=submit]:hover{
   text-align: center;
 }
 
-input[type=Text], select:focus{
+.nome,input[type=Text], select:focus{
   border: 2px outset seagreen;
   color: black;
   background-color: white;
+  text-align: right;
+}
+*/
+.formulario-de-dados{
+  width: 450px;
+  height: 450px;
   text-align: center;
+  border: 5px solid gold;
+  margin: 0;
+  top: 70px;
+  left: 200px;
+  position: relative;
+}
+.side{
+  flex: 30%;
+  padding: 20px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.infor-user{
+   border-bottom: 5px  solid red;
+   background: lightgrey;
+   color: white;
+   margin-bottom: 10px;
+   margin-left: -150px;
+}
+}
+@media (max-width: 700px) {
+  .row, .navbar{
+    flex-direction: column;
+  }
+@media (max-width: 500px){
+  .row, .navbar {
+    flex-direction: row;
+  }
+}
+@media (max-width: 300px){
+  .row, .navbar{
+    flex-direction: row;
+  }
+}
+@media (max-width: 700px){
+  .formulario-de-dados{
+    text-align: center;
+    border: 2px solid red;
+    margin: 0;
+    top: 45px;
+    left: 100px;
+    position: relative;
+  }
 }

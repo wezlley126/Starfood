@@ -2,7 +2,7 @@
     //starta a sessão salvando o email e senha do usuário para ele não ter que fazer login toda vez que entrar no site, somente após encerrar a sessão;
     session_start();
     //comando que inclue o arquivo connect.php e estabelece conexão com a página
-	include 'connect.php';
+	  include 'connect.php';
 
     $email = mysqli_escape_string($conect, $_GET['email']);
     $senha = mysqli_escape_string($conect, $_GET['senha']);
@@ -19,12 +19,10 @@
 
     //se existir 1 linha com o email e senha digitados ele starta a sessão e redireciona para a página principal se ele não encontrar nada acontece;
     if ($rows==1) {
-        $_SESSION['email'] = $_GET['email'];
-        $_SESSION['senha'] = $_GET['senha'];
         header('location: ../index.php');
     //armazena os dados do user em um array
-        $array = mysqli_fetch_row($query);
-        $_SESSION['user'] = $array;
+        $_SESSION['user'] = mysqli_fetch_row($query);
+        //$_SESSION['user'] = $array;
     }else{
 				$_SESSION['conta_existente'] = true;
         header("location: logino.php");

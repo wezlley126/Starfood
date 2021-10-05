@@ -1,19 +1,42 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-}
 body{
-
-}
-.bkg{
-
-}
-.bkg form{
   text-align: center;
-  margin-top: 80px;
+  background:linear-gradient(to right, #8a22d2, #E9967A);
+}
+#compras{
+  border: outset 2px black;
+  width: 500px;
+  margin-left: 30%;
+  margin-top: 8%;
+  padding: 8px;
+  background: #ff7243;
+  display: block;
+}
+#compras:hover{
+  001em blackbox-shadow: 200px;
+
+}
+#titulo_carrinho{
+  font-family: inherit;
+  font-size: 25px;
+  padding-bottom:
+}
+#tabela_compras{
   border: solid 2px black;
-  width: 300px;
-  background-color: #6f34b9;
-  color: #99b61c;
+}
+td{
+  border: solid 2px black;
+}
+#produto_nulo{
+  font-size: 20px;
+  color: #2743bd;
+}
+#button{
+  padding: 6px;
+  margin: 12px;
+  background: #00CD00;
+}
+#button:hover{
+  transition: all .1s;
+  background: #00EE00;
+  padding: 10px;
 }
