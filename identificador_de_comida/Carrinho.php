@@ -53,7 +53,7 @@
 
           <?php
             ?>
-            <a href=""><div id="chorro"><button type="button" name="button" id="button">Confirmar a compra</button><img src="https://mensagenseatividades.com/wp-content/uploads/2017/05/gifs-com-animais-divertidos.gif"></div><a>
+            <a href=""><div id="chorro"><button type="button" name="button" id="button">Confirmar a compra</button><br/><img width="200px" src="beyblade.gif"><img width="265px" src="gato_giratorio.gif"><video style="margin: 0%;" height="150px;" width="250px" src="esquilo_girando.mp4" autoplay></div><a>
             <?php
               }else{
                 ?>

@@ -68,15 +68,14 @@ td{
   animation-iteration-count: infinite;
 }
 
-#chorro img{
+#chorro img, video{
   display: none;
   text-align: center;
 }
 
-#chorro:hover img{
-  display: block;
+#chorro:hover img, video{
+  display: inline;
   color: white;
   text-align: center;
   margin-left: 0%;
-  position: absolute;
 }
