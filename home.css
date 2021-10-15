@@ -9,7 +9,9 @@
 h1{
   text-align: center;
 }
-
+/*
+  a mimir
+*/
 #logo{
   width: 200px;
 }
@@ -25,11 +27,12 @@ h1{
   text-decoration: none;
   text-align: center;
   margin-top: 0px;
+  margin: 0;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #c15128;
+  background-color: #FF0000;
   color: white;
   transition: 0.50s;
 }

@@ -20,6 +20,7 @@
   text-decoration: none;
   text-align: center;
   margin-top: 0px;
+  margin: 0;
 }
 
 /* Change color on hover */
@@ -167,7 +168,7 @@ h2 {
 }
 @media (max-width: 700px) {
   .row, .navbar {
-    flex-direction: column;
+    flex-direction: row;
   }
 @media (max-width: 500px){
   .row, .navbar {

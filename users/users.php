@@ -46,8 +46,10 @@
 </div>
 <div class="row">
   <div class="side">
-
-      <div id="img-usuario"></div>
+        <div id="dados">
+    <div class="alinhar-imagem">
+      <img class="imagem-usuario" src="https://soubh.uai.com.br/uploads/post/image/11558/main_destaque_Alexandr_Popel.jpg" alt="Verifique sua rede Wi-fi">
+    </div>
       <div class="fakeimg" style="height:20px;">Email: <?php echo $_SESSION['user'][3]; ?></div><br>
       <div class="fakeimg" style="height:20px;">Nome: <?php echo $_SESSION['user'][1]." ".$_SESSION['user'][2]; ?></div><br>
       <div class="fakeimg" style="height:20px;">Sexo: <?php echo $_SESSION['user'][5]; ?> <br/> Conta: <?php echo $_SESSION['user'][6]; ?></div>
@@ -55,6 +57,7 @@
           <div id="alterar_dados"><input type="submit" name="alterar_dados" value="Desejo alterar meus dados!" id="alterar_dados_button"></div>
       </form>
   </div>
+</div>
 </div>
 <div class="row">
   <div class="side">

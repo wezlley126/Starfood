@@ -5,11 +5,13 @@
 #alterar_dados{
   text-align: center;
   margin: 10px;
+  margin-top: 180px;
 }
 #alterar_dados_button{
+  border-radius: 5px;
   border: outset 2px black;
   color: white;
-  background-color: #ff7243;
+  background-color: #FF4500;
   padding: 10px;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -20,7 +22,7 @@
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background-color: #ff7243;
+  background-color: #FF8C00;
   border: outset 2px black;
   transition: 0.5s;
   color: white;
@@ -85,24 +87,66 @@ body {
 /* Main column */
 .main {
   flex: 70%;
-  background-color: white;
   padding: 20px;
 }
 
 
 /* Fake image, just for this example */
 .fakeimg {
+  color: white;
   padding: 5px;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   text-align: center;
   font-size: 1em;
 }
 
-#img-usuario{
-  border-radius: 5%;
-  background: black;
-  margin: 2.5px;
+#dados{
+  background-color: #FF0000;
+  height: 650px;
+  width: 360px;
+  font-size: 1em;
+  margin: 0 auto;
+  border-radius: 5px;
 }
+
+
+#dados:hover{
+  box-shadow: 0 0 10px black;
+}
+
+/*
+  CSS para alinhar a imagem da foto de perfil do usuário.
+*/
+.alinhar-imagem{
+  margin: 0 auto;
+  width: 200px;
+  padding-bottom: 10px;
+  margin-right: 32%;
+  padding-top: 10px;
+}
+
+/*Imagem de usuário:
+- clip-path ==> Recorta a imagem em formas geométricas dependendo dos
+ valores etc.
+- height e width ==> Definindo a altura e largura da imagem para ficar circular.
+*/
+
+.imagem-usuario{
+  clip-path: circle(50% at 50% 50%);
+  height: 280px;
+  width: 280px;
+}
+
+/*CSS para aparecer o nome "Alterar foto". Não sei porque não funcionou
+mas depois vou tentar refazer.
+
+.imagem-usuario:hover{
+  background-color: white;
+  clip-path: circle(50% at 50% 50%)
+  opacity: 0.5;
+}
+*/
+
 .anucio-de-vip !important{
   font-family: cursive;
   padding: 20px;
@@ -140,11 +184,10 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
   .row, .navbar, .anucio-de-vip{
-    flex-direction: column;
+    flex-direction: row;
   }
 @media (max-width: 500px){
   .row, .navbar, .anucio-de-vip {

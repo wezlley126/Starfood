@@ -1,6 +1,6 @@
 body{
   text-align: center;
-  background:linear-gradient(to right, #8a22d2, #E9967A);
+  background: #f8f8f8;
 }
 #compras{
   border: outset 2px black;
@@ -18,17 +18,17 @@ body{
 #titulo_carrinho{
   font-family: inherit;
   font-size: 25px;
-  padding-bottom:
+  padding-bottom: 10px;
 }
 #tabela_compras{
   border: solid 2px black;
 }
 td{
-  border: solid 2px black;
+  border: solid 1px black;
 }
 #produto_nulo{
   font-size: 20px;
-  color: #2743bd;
+  color: white;
 }
 #button{
   padding: 6px;

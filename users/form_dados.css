@@ -1,92 +1,39 @@
-
-/*
-Definindo o espaçamento entre os elementos inputs
-*/
-
-/*Div do formulario de dados*/
-
-/*
-input, select{
-  margin:8px;
-  padding: 8px;atom://teletype/portal/f62768bc-aac1-47c1-a480-0fe791c7756f
-  border: 2px outset seagreen;
-  text-align: center;
-}
-
-/*
-Definindo as caracteristicas do botão 'Alterar os dados!'
-
-input[type=submit]{
-  border: outset 3px black;
-  background-color: white;
-  text-align: center;
-}
-
-/*
-Definindo as caracteristicas do botão 'Alterar os dados!' quando clicar nele
-
-input[type=submit]:hover{
-  background: black;
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-  text-align: center;
-}
-
-.nome,input[type=Text], select:focus{
-  border: 2px outset seagreen;
-  color: black;
-  background-color: white;
-  text-align: right;
-}
-*/
-.formulario-de-dados{
-  width: 450px;
-  height: 450px;
-  text-align: center;
-  border: 5px solid gold;
+#form-user{
+  height: 600px;
+  width: 600px;
+  background: #F2D377;
+  border-left: 6px solid red;
   margin: 0;
-  top: 70px;
-  left: 200px;
-  position: relative;
+
 }
-.side{
-  flex: 30%;
-  padding: 20px;
+#titulo{
+  text-align: center;
+  color:#7BBF15;
 }
-.row{
-  display: flex;
-  flex-wrap: wrap;
+/*
+  A mimir; agora s
+*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-.infor-user{
-   border-bottom: 5px  solid red;
-   background: lightgrey;
-   color: white;
-   margin-bottom: 10px;
-   margin-left: -150px;
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-}
-@media (max-width: 700px) {
-  .row, .navbar{
-    flex-direction: column;
-  }
-@media (max-width: 500px){
-  .row, .navbar {
-    flex-direction: row;
-  }
-}
-@media (max-width: 300px){
-  .row, .navbar{
-    flex-direction: row;
-  }
-}
-@media (max-width: 700px){
-  .formulario-de-dados{
-    text-align: center;
-    border: 2px solid red;
-    margin: 0;
-    top: 45px;
-    left: 100px;
-    position: relative;
-  }
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
