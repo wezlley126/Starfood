@@ -1,39 +1,81 @@
+body{
+  animation-duration: 15s;
+  animation-name: rgb_loko;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes rgb_loko{
+    from{
+      background: red;
+    }
+    to{
+      background: red;
+    }
+    25%{
+      background: orange;
+    }
+    50%{
+      background: yellow;
+    }
+    75%{
+      background: white;
+    }
+  }
+a{
+  list-style:
+}
 #form-user{
-  height: 600px;
-  width: 600px;
-  background: #F2D377;
+  margin-left: 26% !important;
+  height: 700px;
+  width: 700px;
+  background-image: linear-gradient(to right, #BF9B7A , #733122 );
   border-left: 6px solid red;
   margin: 0;
-
+  border: 2px solid
 }
 #titulo{
   text-align: center;
   color:#7BBF15;
 }
-/*
-  A mimir; agora s
-*/
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
+
+.dados{
+  margin-left: 36% !important;
+  padding: 10px;
+  width: 200px;
   margin: 8px 0;
+  margin-bottom: 5%;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-input[type=submit] {
-  width: 100%;
+#button {
+  width: 200px;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin-left: 100px;
   border: none;
+  margin-top: 5%;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 18px;
 }
+#button-cancelar{
 
-input[type=submit]:hover {
-  background-color: #45a049;
+  text-decoration: none;
+  width: 170px;
+  background: red;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  margin-left: 38px;
+  margin-top: 5%;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+span{
+  display: flex;
+  padding: 5%;
 }

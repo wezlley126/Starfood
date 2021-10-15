@@ -53,7 +53,7 @@
 
           <?php
             ?>
-            <button type="button" name="button" id="button">Confirmar a compra</button>
+            <a href=""><div id="chorro"><button type="button" name="button" id="button">Confirmar a compra</button><img src="https://mensagenseatividades.com/wp-content/uploads/2017/05/gifs-com-animais-divertidos.gif"></div><a>
             <?php
               }else{
                 ?>

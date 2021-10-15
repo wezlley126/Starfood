@@ -26,8 +26,6 @@
   <a href="../extras.php">Extra</a>
 </div>
 <div class="header">
-  <h1>Starfood</h1>
-  <p>O seu site de comida que vai além das <b>estrelas</b> por você</p>
   <?php
 
     if (isset($_SESSION['conta_alterada'])) {

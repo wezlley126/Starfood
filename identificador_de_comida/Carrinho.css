@@ -13,7 +13,7 @@ body{
 }
 #compras:hover{
   001em blackbox-shadow: 200px;
-
+/*Ser dormiu e gay*/
 }
 #titulo_carrinho{
   font-family: inherit;
@@ -39,4 +39,44 @@ td{
   transition: all .1s;
   background: #00EE00;
   padding: 10px;
+  animation-duration: 0.2s;
+  animation-name: rgb_loko;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rgb_loko{
+  from{
+    background: #00EE00;
+  }
+  to{
+    background: red;
+  }
+  25%{
+    background: blue;
+  }
+  50%{
+    background: pink;
+  }
+  75%{
+    background: yellow;
+  }
+}
+
+#chorro:hover{
+  animation-duration: 0.2s;
+  animation-name: rgb_loko;
+  animation-iteration-count: infinite;
+}
+
+#chorro img{
+  display: none;
+  text-align: center;
+}
+
+#chorro:hover img{
+  display: block;
+  color: white;
+  text-align: center;
+  margin-left: 0%;
+  position: absolute;
 }
