@@ -3,7 +3,7 @@
   if (!isset($_SESSION['user'])) {
       header("location: sistema_contas/logino.php");
   }else{
-    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 8) {
       header("location: sistema_contas/logino.php");
     }
   }
@@ -21,8 +21,11 @@
   </head>
   <!-- lucas=adm ban weslley por trafico de lolis-->
     <div id="form-user">
-       <h1 id="titulo">Alterar dados do usuário:</h1>
-      <form class="form" action="alterar_dados_mysql.php" method="post">
+      <form class="form" action="alterar_dados_mysql.php" method="post" enctype="multipart/form-data">
+
+          <h1 id="titulo">Alterar dados do usuário:</h1>
+
+          <div style="color: white;">Foto de perfil:<div/><input type="file" name="foto-perfil" id="foto"><br/>
           <input class="dados" type="text" name="nome" value="<?php echo $_SESSION['user'][1] ?>" required><br/>
           <input class="dados" type="text" name="sobrenome" value="<?php echo $_SESSION['user'][2] ?>" required><br/>
 
@@ -30,18 +33,19 @@
               <option value="Masculino" class="option">Masculino</option>
               <option value="Feminino" class="option">Feminino</option>
               <option value="Outro" class="option">Outro</option>
-          </select><br/>
+          </select>
 
           <select class="dados" name="membro">
               <option value="comum" class="option2">Comum</option>
               <option value="premium" class="option2">Premium</option>
           </select><br/>
 
-          <input class="dados"  type="password" name="senha" placeholder="Confirme usando sua senha" required>
+         <!-- <input type="file" name="foto-perfil"> -->
 
-               <p style="font-size: 18px; text-align: center;">Atenção todas as suas informações anterioes serão alteradas.</p>
+          <input class="dados"  type="password" name="senha" placeholder="Confirme usando sua senha" required><br/>
+
           <span>
-            <a href="users.php" id="button-cancelar">Cancelar compra</a><input id="button" type="submit" name="alteração_dados_concluido" value="Alterar os dados!"></a>
+            <a href="users.php" id="button-cancelar">Voltar</a><input id="button" type="submit" name="alteração_dados_concluido" value="Alterar os dados!"></a>
           </span>
 
       </form>

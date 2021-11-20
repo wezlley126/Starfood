@@ -2,6 +2,7 @@ body{
   animation-duration: 15s;
   animation-name: rgb_loko;
   animation-iteration-count: infinite;
+  text-align: center;
   }
 
   @keyframes rgb_loko{
@@ -21,61 +22,86 @@ body{
       background: white;
     }
   }
-a{
-  list-style:
+form{
+  border: solid 2px black;
+  background: linear-gradient(to right, #2f2f30, #141414);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 55%;
+  margin-left: 24%;
+  margin-top: 5%;
 }
-#form-user{
-  margin-left: 26% !important;
-  height: 700px;
-  width: 700px;
-  background-image: linear-gradient(to right, #BF9B7A , #733122 );
-  border-left: 6px solid red;
-  margin: 0;
-  border: 2px solid
+form, input, select, a{
+  font-size: 100%;
+}
+form:hover{
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+input{
+  text-align: left;
+  margin: 10px;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+select{
+  margin: 4px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1.9%;
+  padding-right: 1.9%;
+}
+input, select{
+  border: outset 2px red;
+}
+input:hover, select:hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+input:hover{
+  transition: 0.3s;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+select:hover{
+  transition: 0.3s;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2.9%;
+  padding-right: 2.9%;
+}
+a{
+  border: outset 2px red;
+  padding-top: 0.4%;
+  padding-bottom: 0.7%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  background-color: white;
+  font-size: 115%;
+}
+a:hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+a:hover{
+  transition: 0.3s;
+  padding-top: 0.4%;
+  padding-bottom: 1%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 #titulo{
-  text-align: center;
-  color:#7BBF15;
-}
-
-.dados{
-  margin-left: 36% !important;
-  padding: 10px;
-  width: 200px;
-  margin: 8px 0;
-  margin-bottom: 5%;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#button {
-  width: 200px;
-  background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
-  margin-left: 100px;
-  border: none;
-  margin-top: 5%;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 18px;
 }
-#button-cancelar{
-
-  text-decoration: none;
-  width: 170px;
-  background: red;
+#foto{
+  border: none;
   color: white;
-  padding: 14px 20px;
-  border: none;
-  margin-left: 38px;
-  margin-top: 5%;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-}
-span{
-  display: flex;
-  padding: 5%;
+  width: 60%;
+  margin-left: 8%;
 }

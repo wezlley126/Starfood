@@ -3,7 +3,7 @@
   if (!isset($_SESSION['user'])) {
       header("location: ../sistema_contas/logino.php");
     }else{
-      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 8) {
         header("location: ../sistema_contas/logino.php");
       }
     }
@@ -53,7 +53,7 @@
 
           <?php
             ?>
-            <a href=""><div id="chorro"><button type="button" name="button" id="button">Confirmar a compra</button><br/><img width="200px" src="beyblade.gif"><img width="265px" src="gato_giratorio.gif"><video style="margin: 0%;" height="150px;" width="250px" src="esquilo_girando.mp4" autoplay></div><a>
+            <a href=""><div id="chorro"><button type="button" name="button" id="button">Confirmar a compra</button><br/><img width="200px" src="beyblade.gif"><img width="265px" src="gato_giratorio.gif"><video style="margin: 0%;" height="150px;" width="250px" src="Esquilo_girando.mp4" autoplay></div><a>
             <?php
               }else{
                 ?>

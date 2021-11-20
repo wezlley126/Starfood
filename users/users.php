@@ -3,7 +3,7 @@
   if (!isset($_SESSION['user'])) {
       header("location: ../sistema_contas/logino.php");
   }else{
-    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+    if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 8) {
       header("location: ../sistema_contas/logino.php");
     }
   }
@@ -40,13 +40,17 @@
       echo "Senha incorreta, tente novamente!";
     }unset($_SESSION['senha_incorreta']);
 
+    if (isset($_SESSION['formato inválido'])) {
+      echo "Formato de imagem inválido!";
+    }unset($_SESSION['formato inválido']);
+
   ?>
 </div>
 <div class="row">
   <div class="side">
         <div id="dados">
     <div class="alinhar-imagem">
-      <img class="imagem-usuario" src="https://soubh.uai.com.br/uploads/post/image/11558/main_destaque_Alexandr_Popel.jpg" alt="Verifique sua rede Wi-fi">
+      <img class="imagem-usuario" src="<?php echo $_SESSION['user']['7']; ?>" alt="Verifique sua rede Wi-fi">
     </div>
       <div class="fakeimg" style="height:20px;">Email: <?php echo $_SESSION['user'][3]; ?></div><br>
       <div class="fakeimg" style="height:20px;">Nome: <?php echo $_SESSION['user'][1]." ".$_SESSION['user'][2]; ?></div><br>
@@ -61,7 +65,7 @@
   <div class="side">
 <div class="anucio-de-vip">
    <img  id= "vipicon" src="https://img.icons8.com/dusk/64/000000/vip.png"/>
-   <p>Torna-se um cliente vip agora e receba descontos semanais em nossos produtos! </p>
+   <p>Torne-se um cliente vip agora e receba descontos semanais em nossos produtos! </p>
 </div>
 </div>
 </div>

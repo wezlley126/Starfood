@@ -11,7 +11,7 @@
     if (!isset($_SESSION['user'])) {
         header("location: ../sistema_contas/logino.php");
     }else{
-      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 7) {
+      if (!is_array($_SESSION['user']) || count($_SESSION['user']) != 8) {
         header("location: ../sistema_contas/logino.php");
       }
     }
