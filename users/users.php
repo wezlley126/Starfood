@@ -41,7 +41,7 @@
     }unset($_SESSION['senha_incorreta']);
 
     if (isset($_SESSION['formato inválido'])) {
-      echo "Formato de imagem inválido!";
+      echo "<br/>Formato de imagem inválido!";
     }unset($_SESSION['formato inválido']);
 
   ?>
